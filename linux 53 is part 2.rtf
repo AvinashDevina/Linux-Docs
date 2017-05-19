@@ -1,0 +1,182 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Georgia;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c20000\c20000\c20000;\cssrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl420\sa200\partightenfactor0
+
+\f0\b\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 54. how to color the Git console?
+\b0 \
+To color the Git console you can use the command git config\'97global color.ui auto. In the command, the color.ui variable sets the default value for variable such as color.diff and color.grep.\
+
+\b 55. How can you append one file to another in Linux?
+\b0 \
+To append one file to another in Linux you can use command cat file2 >> file 1. The operator >> appends the output of the named file or creates the file if it is not created. While another command cat file 1 file 2 > file 3 appends two or more files to one.\
+
+\b 56. how you can find a file using Terminal?
+\b0 \
+To find a file you have to use command, find . \'96name \'93process.txt\'94 . It will look for the current directory for a file called process.txt.\
+
+\b 57. how you can create a folder using Terminal?
+\b0 \
+To create a folder, you have to use command mkdir. It will be something like these : ~$ mkdir Guru99\
+
+\b 58. how you can view the text file using Terminal?
+\b0 \
+To view the text file, go to the specific folder where the text files are located by using the command cd and then type less filename.txt.\
+
+\b 59. how to enable curl on Ubuntu LAMP stack?
+\b0 \
+To enable curl on Ubuntu , first install libcurl, once done use following command sudo/etc/init .d /apache2 restart or sudo service apache2 restart.\
+
+\b 60. how to enable root loging in Ubuntu?
+\b0 \
+The command which enables root loging is\
+#sudo sh-c \'91echo \'93greater-show-manual-login=true\'94 >>/etc/lightdm/lightdm.conf\'92\
+
+\b 61. How you can run an Linux program in the background simultaneously when you start your Linux Server?
+\b0 \
+By using nohup. It will stop the process receiving the NOHUP signal and thus terminating it you log out of the program which was invoked with. & runs the process in the background.\
+
+\b 62. how to uninstall the libraries in Linux?
+\b0 \
+To uninstall the libraries in Linux, you can use command sudo apt \'96 get remove library_name\
+
+\b 63. I want to connect to a remote server and execute some commands, how can I achieve this?
+\b0 \
+We can use telnet to do this:\
+telnet hostname \'96l user\
+>Enter password\
+>Write the command to execute\
+>quit\
+
+\b 64. I have 2 files and I want to print the records which are common to both.
+\b0 \
+We can use \'93comm\'94 command as follows:\
+comm -12 file1 file2 \'85 12 will suppress the content which are\
+unique to 1st and 2nd file respectively.\
+
+\b 65. Write a script to print the first 10 elemenst of Fibonacci series.
+\b0 \
+Make one file in Vi editor myscript.sh\
+#!/bin/sh\
+a=1\
+b=1\
+echo $a\
+echo $b\
+for I in 1 2 3 4 5 6 7 8\
+do\
+c=a\
+b=$a\
+b=$(($a+$c))\
+echo $b\
+done\
+
+\b 66. What are the 3 standard streams in Linux?
+\b0 \
+0 \'96 Standard Input\cb1 \uc0\u8232 \cb3 1 \'96 Standard Output\cb1 \uc0\u8232 \cb3 2 \'96 Standard Error\
+
+\b 68. I want to read all input to the command from file1 direct all output to file2 and error to file 3, how can I achieve this?
+\b0 \
+command <file1 1>file2 2>file3\
+
+\b 69. Given a file find the count of lines containing word \'93ABC\'94.
+\b0 \
+grep \'96c \'93ABC\'94 file1\
+
+\b 70. What is the difference between grep and egrep?
+\b0 \
+egrep is Extended grep that supports added grep features like \'93+\'94 (1 or more occurrence of previous character),\'94?\'94(0 or 1 occurrence of previous character) and \'93|\'94 (alternate matching)\
+
+\b 71. How will you find the total disk space used by a specific user?
+\b0 \
+$ du -s /home/user1 \'85.where user1 is the user for whom the total disk\
+space needs to be found.\
+
+\b 72. How will I insert a line \'93ABCDEF\'94 at every 100th line of a file?
+\b0 \
+$ sed \'91100i\\ABCDEF\'92 file1\
+
+\b 73. Write a command sequence to find all the files modified in less than 2 days and print the record count of each.
+\b0 \
+find . \'96mtime -2 \'96exec wc \'96l \{\} \\;\
+
+\b 74. How can I set the default rwx permission to all users on every file which is created in the current shell?
+\b0 \
+We can use: umask 777\cb1 \uc0\u8232 \cb3 This will set default rwx permission for every file which is created to every user.\
+
+\b 75. How can we find the process name from its process id?
+\b0 \
+We can use \'93ps \'96p ProcessId\'94\
+
+\b 76. How can I send a mail with a compressed file as an attachment?
+\b0 \
+zip file1.zip file1|mailx \'96s \'93subject\'94 Recepients email id\
+Email content\
+EOF\
+
+\b 77. How do we create command aliases in shell?
+\b0 \
+alias Aliasname=\'94Command whose alias is to be created\'94\
+Ex :- alias server_path=/home/tom/apache\
+
+\b 78. Which is the standard command used to uncompress gzip files?
+\b0 \
+The standard command used to uncompress gzip files is gunzip.\
+
+\b 79. What is the command used to install an RPM package named demofilename2.2-2.i386.rpm?
+\b0 \
+The most common command used to install an RPM package is rpm -ivh. Following command will install the given package\
+#rpm -ivh demofilename2.2-2.i386.rpm\
+
+\b 80. When attempting to connect to www.example.com you got unknown host message. Which service is most likely not functioning properly?
+\b0 \
+DNS \'96 Domain Name Service\
+
+\b 81. Name one of the most secure method of remote access.
+\b0 \
+SSH is the most secure method of remote access\
+
+\b 82. What command is used to exit the edit mode of VI editor?
+\b0 \
+The [esc] key is used to exit from the edit mode of VI editor.\
+
+\b 83. What key combination will exit from VI editor and not save the changes made?
+\b0 \
+Esc + q +! Key combination will exit VI without saving the changes.\
+
+\b 84 Where is the file . bashrc located?
+\b0 \
+The . bashrc file is usually located in the /home/username directory.\
+
+\b 85. What function does the .bash_profile file perform?
+\b0 \
+The function of the .bash_profile file is to provide login initialization commands.\
+
+\b 86. What function does the .bash_logout file perform?
+\b0 \
+The function of the .bash_logout is to provide logout functions\
+
+\b 87. What function does the .bashrc file perform?
+\b0 \
+The function of the .bashrc file is to provide shell configuration commands.\
+
+\b 88. What are the default ports used for SMTP,DNS,FTP,DHCP,SSH and squid ?
+\b0 \
+Service Port\cb1 \uc0\u8232 \cb3 \'97\'97\'97\'97\'97\'97\'97\'97\'96\cb1 \uc0\u8232 \cb3 SMTP 25\cb1 \uc0\u8232 \cb3 DNS 53\cb1 \uc0\u8232 \cb3 FTP 20 (data transfer) , 21 ( Connection established)\cb1 \uc0\u8232 \cb3 DHCP 67/UDP(dhcp server) , 68/UDP(dhcp client)\cb1 \uc0\u8232 \cb3 SSH 22\cb1 \uc0\u8232 \cb3 Squid 3128\
+
+\b 89. How to check which ports are listening in my Linux Server ?
+\b0 \
+Use the Command \'91netstat \'96listen\'92 and \'91lsof -i\'92\
+
+\b 90. How to check file system and space available on it.
+\b0 \
+[root@linux-world ~]# df -k\
+Filesystem 1K-blocks Used Available Use% Mounted on\cb1 \uc0\u8232 \cb3 /dev/mapper/vg00-root 17003304 804668 15311852 5% /\cb1 \uc0\u8232 \cb3 devtmpfs 771876 0 771876 0% /dev\cb1 \uc0\u8232 \cb3 tmpfs 777928 0 777928 0% /dev/shm\cb1 \uc0\u8232 \cb3 tmpfs 777928 8532 769396 2% /run\cb1 \uc0\u8232 \cb3 tmpfs 777928 0 777928 0% /sys/fs/cgroup\cb1 \uc0\u8232 \cb3 /dev/mapper/vg00-home 14987616 41000 14162232 1% /home\cb1 \uc0\u8232 \cb3 /dev/sda1 487652 62593 395363 14% /boot\cb1 \uc0\u8232 \cb3 /dev/mapper/vg00-var 9948012 48696 9370932 1% /var\cb1 \uc0\u8232 \cb3 /dev/mapper/vg00-sap 14987656 37636 14165636 1% /sap\
+
+\b 91. Tell me the steps to remove the swap file?
+\b0 \
+Ans . Firstly disable the swap file by \'93swapoff\'94 command.\cb1 \uc0\u8232 \cb3 Remove Swap file entry from /etc/fstab file.\cb1 \uc0\u8232 \cb3 Now remove the swap file by \'93rm\'94 command.\
+}
